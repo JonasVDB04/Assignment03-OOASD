@@ -4,7 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-    </PropertyGroup>
+      <UserSecretsId>66c218fb-ca42-4ba4-afa6-3fafc5f93ceb</UserSecretsId>
+  </PropertyGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
@@ -12,6 +13,9 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.2" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.11" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.11" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.11" />
     </ItemGroup>
 
 </Project>
