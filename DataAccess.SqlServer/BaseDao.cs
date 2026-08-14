@@ -17,7 +17,7 @@ public abstract class BaseDao
         _connectionString = sqlBuilder.ConnectionString;
     }
 
-    protected SqlConnection CreateConnection()
+    protected SqlConnection GetConnection()
     {
         return new SqlConnection(_connectionString);
     }

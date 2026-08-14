@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Domain;
+using DataAccess.SqlServer;
 
-Console.WriteLine("Hello, World!");
+FlowerDao flowerDao = new FlowerDao();
+IList<Flower> flowers = flowerDao.GetFlowers();
+
+foreach (Flower flower in flowers)
+{
+    Console.WriteLine(flower);
+}
