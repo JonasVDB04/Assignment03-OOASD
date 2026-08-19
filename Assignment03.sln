@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.SqlServer", "Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.CLI", "UI.CLI\UI.CLI.csproj", "{645F4D74-C595-4ECA-A0E6-DE54D48B225C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowerShopUI", "FlowerShopUI\FlowerShopUI.csproj", "{33DA1B37-D648-4A86-905E-B5FEAFFD002B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{645F4D74-C595-4ECA-A0E6-DE54D48B225C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{645F4D74-C595-4ECA-A0E6-DE54D48B225C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{645F4D74-C595-4ECA-A0E6-DE54D48B225C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33DA1B37-D648-4A86-905E-B5FEAFFD002B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33DA1B37-D648-4A86-905E-B5FEAFFD002B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33DA1B37-D648-4A86-905E-B5FEAFFD002B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33DA1B37-D648-4A86-905E-B5FEAFFD002B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
