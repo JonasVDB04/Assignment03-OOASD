@@ -3,7 +3,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="FlowershopUI.MainWindow"
+        x:Class="FlowerShopUI.MainWindow"
         Title="FlowerShopUI">
-    Welcome to Avalonia!
+    <StackPanel Width="400" HorizontalAlignment="Center">
+        <Border CornerRadius="10" Background="DarkOliveGreen" Margin="5">
+            <TextBlock HorizontalAlignment="Center" Margin="5">Welkom tot de FlowerShop!</TextBlock>
+        </Border>
+        <TextBlock HorizontalAlignment="Center" Margin="5">Meld je aan om een boeket samen te stellen.</TextBlock>
+        <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto, Auto, Auto" ColumnSpacing="10" RowSpacing="10">
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="5">Gebruikersnaam</TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="1" Width="200" CornerRadius="10" x:Name="Gebruikersnaam"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="5">Wachtwoord</TextBlock>
+            <TextBox Grid.Row="1" Grid.Column="1" Width="200" CornerRadius="10" x:Name="Wachtwoord" PasswordChar="*"/>
+            <Button Grid.Row="2" Grid.Column="0" CornerRadius="10" Click="Button_OnClick_Login">AANMELDEN</Button>
+            <Button Grid.Row="2" Grid.Column="1" CornerRadius="10" Click="Button_OnClick_Register">REGISTREREN</Button>
+        </Grid>
+        <TextBlock x:Name="Error" Foreground="Red"></TextBlock>
+    </StackPanel>
 </Window>
